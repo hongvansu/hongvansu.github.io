@@ -1,0 +1,131 @@
+
+.header {
+  background-color: white;
+  color: purple;
+  text-align: center;
+  padding: 80px;
+}
+#wp_content {
+  width: 960px;
+  margin: 30px auto;
+  
+}
+
+.div_1,
+.div_2,
+.div_4,
+.div_5,
+.div_6,
+.div_7 {
+  min-height: 100px;
+  width: 39%;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+ 
+}
+
+.div_3 {
+  min-height: 400px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.div_8,
+.div_9,
+.div_10,
+.div_11 {
+  min-height: 200px;
+  width: 22.3%;
+  float: left;
+
+  margin-top: 80px;
+  margin-bottom: 80px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.div_12,
+.div_13,
+.div_14,
+.div_15,
+.div_16,
+.div_17 {
+  min-height: 200px;
+  width: 30%;
+  float: left;
+
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.div_1 {
+  background: lightseagreen;
+  width: 20%;
+  float: left;
+  text-transform:uppercase;
+  font-size: large;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.div_2 {
+  background: goldenrod;
+  text-transform:uppercase;
+  font-size: large;
+  width: 69%;
+  margin-top: 3px;
+  margin-bottom: 150px;
+}
+.div_3 {
+  background: hotpink;
+  width: 50%;
+  float: left;
+}
+.div_4 {
+  background: lightseagreen;
+}
+.div_5 {
+  background: goldenrod;
+}
+.div_6 {
+  background: lightseagreen;
+}
+.div_7 {
+  background: goldenrod;
+}
+.div_8 {
+  background: lightseagreen;
+}
+.div_9 {
+  background: goldenrod;
+}
+.div_10 {
+  background: lightseagreen;
+}
+.div_11 {
+  background: goldenrod;
+}
+.div_12 {
+  background: lightseagreen;
+}
+.div_13 {
+  background: goldenrod;
+}
+.div_14 {
+  background: lightseagreen;
+}
+.div_15 {
+  background: goldenrod;
+}
+.div_16 {
+  background: lightseagreen;
+}
+.div_17 {
+  background: goldenrod;
+}
