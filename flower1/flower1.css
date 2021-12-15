@@ -4,18 +4,7 @@ body {
     color: #111;
     line-height: 1.15;
   }
-  #backtop{
-    width: 100px;
-    height: 50px;
-    background: crimson;
-    color: white;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    position: fixed;
-  }
+
   #backtop{
     width: 100px;
     height: 50px;
@@ -37,4 +26,7 @@ body {
     font-size: 25px;
     color: #111;
  
+  }
+  .product-price{
+    color: darkred;
   }
