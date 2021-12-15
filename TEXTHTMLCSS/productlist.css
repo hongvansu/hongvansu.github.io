@@ -9,9 +9,10 @@ body {
 
 img {
   max-width: 100%;
+  transition: 3s;
 }
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -33,9 +34,9 @@ img {
 .product-name {
   margin: 5px 0;
   color: black;
-  font-size: 1.2em;
-  justify-content: center;
-  align-items: center;
+  font-size: 1.0em;
+  justify-content: left;
+  align-items: left;
   display: flex;
   text-transform: uppercase;
 }
@@ -43,8 +44,8 @@ img {
   margin: 5px 0;
   color: darkred;
 
-  font-size: 1.8em;
-  justify-content: center;
-  align-items: center;
+  font-size: 1.0em;
+  justify-content: left;
+  align-items: left;
   display: flex;
 }
