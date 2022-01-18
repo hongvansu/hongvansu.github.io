@@ -1,15 +1,41 @@
-.content {
-  margin-top: 40px;
-  margin-bottom: 40px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.5s;
 }
-
-.image img {
-  height: 200px;
-  width: 100%;
-  display: flex;
+body {
+  font-size: 12px;
 }
-.image {
-  background-color: white;
+h2 {
+  font-weight: bold;
+  color: gray;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+.line {
+  width: 100%;
+}
+.news-anime {
+  display: flex;
+  justify-content: space-between;
+}
+.img-news-anime {
+  width: 50%;
+}
+.news-anime span {
+  width: 45%;
+  font-size: 1rem;
+}
+.img-art {
+  width: 100%;
+}
+@media (max-width: 739px) {
+  .banner-col {
+    display: flex;
+    justify-content: space-between;
+  }
+  .banner-hide {
+    display: none;
+  }
 }
