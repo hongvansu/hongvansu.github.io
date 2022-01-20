@@ -1,5 +1,6 @@
-.p1 {
-    color: navy;
-    text-indent: 30px;
-    text-transform: uppercase;
-  }
+.body {
+  text-align: center;
+}
+.h1 {
+  color: blue;
+}
