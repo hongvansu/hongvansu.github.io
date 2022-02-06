@@ -1,59 +1,82 @@
-//Câu 1. Tạo 1 thẻ p có id=“text”, có nội dung bất kỳ (có thể tạo bằng HTML hay Javascript - tùy chọn). Yêu cầu
+//Nối tiếp vào bài tập buổi 1 - Bài số 3: ul-li
 
-//Đặt màu văn bản thành #777
-//Đặt kích thước phông chữ thành 2rem
-//Đặt nội dung HTML thành Tôi có thể làm <em> bất cứ điều gì </em> tôi muốn với JavaScript.
+// Cau 1 :
 
-const para = document.querySelector("#text");
-para.style.color = "#777";
-para.style.fontSize = "2rem";
-para.innerHTML =
-  "Tôi có thể làm <em> bất cứ điều gì </em> tôi muốn với JavaScript.";
+//Thêm 1 nút add + 1 ô input để nhập text (tạo bằng Javascript).
 
-//Câu 2. Sử dụng vòng lặp để đặt màu chữ cho tất cả thẻ li thành màu blue (tạo thẻ ul-li bằng html)
-const uls = document.querySelectorAll("ul");
-const li1 = uls[0].querySelectorAll("li");
-for (let i = 0; i < li1.length; i++) {
-  li1[i].style.color = "blue";
-}
-//Sử dụng javascript để thực hiện những công việc sau
+//Mỗi khi bấm nút vào nút add thêm 1 thẻ li có nội dung là nội dung trong ô input vào cuối danh sách ul
 
-//Thêm 3 thẻ <li> có nội dung Item 8, Item 9, Item 10 vào cuối danh sách
+//Trường hợp không có nội dung trong ô input mà bấm add thì cảnh báo (sử dụng alert)
 
-let list = document.getElementById ("list") 
-for (let i = 8; i<=10; i++){
-    let li = document.createElement("li");
-    li.innerText = `Item ${i}`
-    list.appendChild(li)
-}
+// Tao nut add
+let btAdd = document.createElement("button");
+btAdd.innerText = "Add";
+document.body.prepend(btAdd);
 
+// Tao input
 
-//const item8 = document.createElement("li");
-      //const item9 = document.createElement("li");
-      //const item10 = document.createElement("li");
-     // item8.innerText = "Item 8";
-      //item9.innerText = "Item 9";
-     // item10.innerText = "Item 10";
-     // uls[1].appendChild(item8);
-      //uls[1].appendChild(item9);
-     // uls[1].appendChild(item10);
+let input = document.createElement("input");
+btAdd.insertAdjacentElement("beforebegin", input);
+btAdd.addEventListener("click", function () {
+  // B1 : lay noi dung trong o input
+  let value = input.value;
+  // B2 : kiem tra noi dung co trong hay khong
+  if (value == "") {
+    alert("Noi dung khong duoc de trong");
+    return;
+  }
+  // Tao the li moi
+  let li = document.createElement("li");
+  li.innerText = value;
+  list.appendChild(li);
 
-//Sửa nội dung cho thẻ <li> 1 thành màu đỏ (color)
-uls[1].querySelector("li:first-child").style.color = "red";
+  // Clear o input de tao noi dung moi
+  input.value = "";
+});
 
-//Sửa background cho thẻ <li> 3 thành màu xanh (background-color)
-uls[1].querySelector("li:nth-child(3)").style.backgroundColor = "red";
-      // Remove thẻ <li> 4
-      const item4 = uls[1].querySelector("li:nth-child(4)");
-      uls[1].removeChild(item4);
+// Cau 2 :
 
+//Thêm 1 nút remove (tạo bằng Javascript). Chức năng để xóa thẻ li cuối cùng của danh sách ul
 
+// Tao nut Add :
 
-//Thêm thẻ <li> mới thay thế cho thẻ <li> 4 bị xóa ở bước trước, thẻ <li> mới có nội dung bất kỳ
+let btnRemove = document.createElement("button");
+btnRemove.innerText = "Remove";
+document.body.prepend(btnRemove);
 
-const newLi = document.createElement("li");
-      newLi.innerText = "thay thế item 4";
-      uls[1]
-        .querySelector("li:nth-child(3)")
-        .insertAdjacentElement("afterend", newLi);
-    
+btnRemove.addEventListener("click", function () {
+  // Truy cap vao the cuoi cung
+
+  let liLast = document.querySelector(".list li: last-child");
+
+  // Kiem tra , neu con li thi thuc hien xoa
+
+  if (liLast) {
+    liLast.parentNode.removeChild(liLast);
+  }
+});
+
+// Bai 3 :
+//Thêm 1 nút Hide trên đầu của danh sách ul
+
+// Khi bấm vào Hide thì ul sẽ ẩn. Đồng thời label của nút Hide => Show
+
+// Và ngược lại, khi bấm vào Show thì ul sẽ hiện. Đồng thời label của nút Show => Hide
+
+// Tao nut Hide
+
+let btnHide = document.createElement("button");
+btnHide.innerText = "Hide";
+document.body.prepend(btnHide);
+
+btnHide.addEventListener("click", function () {
+  list.classList.toggle("hide");
+  // Kiem tra xem phan tu co class hide hay khong
+  // Neu co -> "show"
+  // Neu khong -> "Hide"
+  if (list.classList.contains("hide")) {
+    btnHide.innerText = "show";
+  } else {
+    btnHide.innerText = "Hide";
+  }
+});
