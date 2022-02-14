@@ -63,7 +63,7 @@ h1 {
     height: 100%;
     padding: 0 1.3rem;
     border: 1px solid rgba(255,255,255,.3);
-    background-color: #FF6666;
+    background-color: #9a0000;
     color: #fff;
     cursor: pointer;
     transition: all .3s ease;
@@ -71,7 +71,7 @@ h1 {
 }
 
 .todo-input button:hover {
-    background-color: #FF5E5E;
+    background-color: #9a0000;
 }
 
 .todo-option {
