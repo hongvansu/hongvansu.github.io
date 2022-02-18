@@ -26,37 +26,113 @@ const data = [
       "https://images.unsplash.com/photo-1573879026263-0ae3b9599d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=620&q=80",
   },
 ];
-// Truy cập vào các phần tử DOM
-const btnSubmit = document.querySelector("#btn-submit")
-const heightEl = document.getElementById ("height")
-const weightEl = document.getElementById ("weight")
-// Lắng nghe sự kiện khi bấm vào nút "Kiểm tra"
-btnSubmit.addEventListener("click", function () {
-  // B1: Lấy value trong 2 ô input
-let weightValue = weightEl.value
-let heightValue = heightEl.value
 
-const nameInput = document.querySelector('input-box');
-const form = document.querySelector('input-box');
+// Truy cập vào nút tính toán kết quả
+const btn_submit = document.getElementById("btn-submit");
+// Truy cập vào ô input nhập chiều cao
+const input_height = document.getElementById("height");
+// Truy cập vào ô input nhập cân nặng
+const input_weight = document.getElementById("weight");
 
-nameInput.addEventListener('input-box', () => {
-  nameInput.setCustomValidity('');
-  nameInput.checkValidity();
-});
+// Truy cập vào tất cả element có class input
+const inputs = document.querySelectorAll(".input");
 
-nameInput.addEventListener('invalid', () => {
-  if(nameInput.value === '') {
-    nameInput.setCustomValidity('Enter your username!');
-  } else {
-    nameInput.setCustomValidity('Usernames can only contain upper and lowercase letters. Try again!');
+let height, weight;
+let isValid;
+let bmi;
+
+// Định nghĩa function checkInputs để validate dữ liệu đầu vào
+
+btn_submit.addEventListener("click", function () {
+  Array.from(inputs).map((e) => e.classList.remove("error"));
+  Array.from(inputs).map((e) => e.classList.remove("success"));
+  isValid = checkInputs();
+  console.log(isValid);
+
+  if (isValid) {
+    height = input_height.value / 100;
+    weight = input_weight.value;
+    bmi = calculateBMI(height, weight).toFixed(2);
+    console.log(bmi);
+
+    document.querySelector(".say-hello").classList.add("hide");
+    document.querySelector(".result-container").classList.remove("hide");
+    document.querySelector(
+      ".result-num"
+    ).innerText = `Chỉ số BMI của bạn : ${bmi}`;
+
+    render(bmi);
   }
 });
+// Định nghĩa function render()
 
-  // B2: Kiểm tra value trống hay không?
- 
+function render(bmi) {
+  if (bmi < 18.5) {
+    renderUI(data[0]);
+  } else if (bmi >= 18.5 && bmi < 24.9) {
+    renderUI(data[1]);
+  } else if (bmi >= 24.9 && bmi < 29.9) {
+    renderUI(data[2]);
+  } else {
+    renderUI(data[3]);
+  }
+}
+function renderUI(data) {
+  document.querySelector(
+    ".image-box"
+  ).style.backgroundImage = `url(${data.image})`;
+  document.querySelector(".result__title").innerText = `👉 ${data.title}`;
+  document.querySelector(".result__content").innerText = `👉 ${data.content}`;
+}
+//  định nghĩa function calculateBMI với 2 tham số đầu vào là height và weight để tính toán ra chỉ số BMI
 
+function calculateBMI(height, weight) {
+  return weight / height ** 2;
+}
 
-  // B3: Tính toán chỉ số BMI dựa vào công thức (tìm trên mạng)
+//  truy cập vào 2 ô input nhập chiều cao, và cân nặng để lấy dữ liệu
 
-  // B4: Dựa vào chỉ số BMI tính toán được ở B3 sử dụng "if/else" để hiển thị ra thông tin phù hợp
-});
+function checkInputs() {
+  height = input_height.value.trim();
+  weight = input_weight.value.trim();
+
+  isValid = true;
+
+  if (weight == "") {
+    isValid = false;
+    setErrorFor(input_weight, "Cân nặng không được để trống.");
+  } else if (!isNumber(weight)) {
+    isValid = false;
+    setErrorFor(input_weight, "Không đúng định dạng.");
+  } else {
+    setSuccessFor(input_weight);
+  }
+
+  if (height == "") {
+    isValid = false;
+    setErrorFor(input_height, "Chiều cao không được để trống.");
+  } else if (!isNumber(height)) {
+    isValid = false;
+    setErrorFor(input_height, "Không đúng định dạng.");
+  } else {
+    setSuccessFor(input_height);
+  }
+
+  return isValid;
+}
+
+function setErrorFor(input, message) {
+  const parent = input.parentElement;
+  parent.classList.add("error");
+  const small = parent.querySelector("small");
+  small.innerText = message;
+}
+
+function setSuccessFor(input) {
+  const parent = input.parentElement;
+  parent.classList.add("success");
+}
+
+function isNumber(num) {
+  return /^\d+$/.test(num);
+}
