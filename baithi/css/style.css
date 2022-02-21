@@ -443,19 +443,19 @@ section {
 
 .newsletter h3 {
   font-size: 3rem;
-  color: var(--black);
+  color: #000000;
 }
 
 .newsletter p {
   font-size: 1.5rem;
-  color: var(--light-color);
+  color: #000000;
   padding: 1rem 0;
 }
 
 .newsletter form {
   max-width: 60rem;
   height: 5rem;
-  background: #fff;
+  background: #FFFF00;
   border-radius: 5rem;
   overflow: hidden;
   display: flex;
