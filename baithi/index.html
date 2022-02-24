@@ -1,333 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- font awesome cdn link  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Poppins:wght@300;400;700;900&family=The+Nautigal&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Poppins:wght@100;300;400;700;900&family=The+Nautigal&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+   
+  </head>
+  <body>
+    <header class="header">
+      <section class="home" id="home">
+        <div id="menu-btn" class="fas fa-bars"></div>
 
-</head>
-<body>
-    
-<header class="header">
+        <nav class="navbar">
+          <a href="#" class="logo"> DreamCars</a>
+          <a href="#home">Search Cars</a>
+          <a href="#vehicles">Buyer Tips</a>
+          <a href="#services">Finance</a>
+          <a href="#featured">Sign In</a>
 
-    <div id="menu-btn" class="fas fa-bars"></div>
+          <button class="btn">Sign Up</button>
+        </nav>
 
-    <a href="#" class="logo"> DreamCars </a>
+        <h1 data-speed="-2" class="home-parallax">Find Your Dream Car</h1>
+        <h3>
+          Search over 20,000 pre-approved used cars and find your perfect
+          vehicle today
+        </h3>
 
-    <nav class="navbar">
-        <a href="#home">Search Cars</a>
-        <a href="#vehicles">Buyer Tips</a>
-        <a href="#services">Finance</a>
-        <a href="#featured">Sign In</a>
-       
-    </nav>
+        <input type="text" placeholder="Search make or model" id="username" />
+        <input type="password" placeholder="Postcode" id="password" />
+        <button id="btn-login">Find My Car</button>
 
-    <div id="login-btn">
-        <button class="btn">Sign Up</button>
-        <i class="far fa-user"></i>
+        <img
+          data-speed="5"
+          class="home-parallax"
+          src="image/Mercedes-Benz-PNG-Transparent.png"
+          alt=""
+        />
+      </section>
+    </header>
+    <div class="container">
+      <div class="row row-cols-4">
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+      </div>
     </div>
-
-</header> 
-    
-<div class="login-form-container">
-
-    <span id="close-login-form" class="fas fa-times"></span>
-
-    <form action="">
-        <h3>user login</h3>
-        <input type="email" placeholder="email" class="box">
-        <input type="password" placeholder="password" class="box">
-        <p> forget your password <a href="#">click here</a> </p>
-        <input type="submit" value="login" class="btn">
-        <p>or login with</p>
-        <div class="buttons">
-            <a href="#" class="btn"> google </a>
-            <a href="#" class="btn"> facebook </a>
-        </div>
-        <p> don't have an account <a href="#">create one</a> </p>
-    </form>
-
+    <script src="js/script.js"></script>
+   
+    <div class="headline">
+      <div class="menu">
+      <h1> FLOWER OF LOVE </h1>
 </div>
 
-<section class="home" id="home">
-
-    <h3 data-speed="-2" class="home-parallax">Find Your Dream Car</h3>
-    <p>Search over 20,000 pre-approved used cars and find your <br>perfect vehicle today</br></p>
-    <form action="">
-    <input type="text" placeholder="Search make or model" id="username">
-    <input type="password" placeholder="Postcode" id="password">
-    
-    <a data-speed="7" href="#" class="btn home-parallax">explore cars</a>
-    <i class="far fa-user"></i>
-    </form>
-    <img data-speed="5" class="home-parallax" src="image/Mercedes-Benz-PNG-Transparent.png" alt="">
-
-    
-
-</section>
-
-<section class="featured" id="featured">
-
-    <h1 class="heading"> Today’s Hottests Deals </h1>
-    <p>Check out the most popular cars in stock today</p>
-
-    <div class="swiper featured-slider">
-
-       <div class="swiper-wrapper">
-
-            <div class="swiper-slide box">
-                <img src="image/Car Card.png" alt="">
-                <div class="content">
-                    
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="image/Car Card (1).png" alt="">
-                <div class="content">
-                    
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="image/Car Card (2).png" alt="">
-                <div class="content">
-                   
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="image/Car Card (3).png" alt="">
-                <div class="content">
-                   
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                   
-                </div>
-            </div>
-
-       </div>
-
-       <div class="swiper-pagination"></div>
-
+    <div class="container" >
+   
+   
+      <div class="item">
+       
+        <ul class="list-flower">
+          <li>
+        <a href="https://hongvansu.github.io/flower1/flower1.html">
+          <img src="image/25895_GWY_R.png"
+           alt="BEST CHRISTMAS ROSE">
+        </a>
+        </li>
+        <div class="product-name">BEST CHRISTMAS ROSE</div>
+        <div class="product-price">$15,56</div>
+      </div>
+    </ul>
+    </li>
+    <div class="item">
+      <ul class="list-flower">
+        <li>
+      <a href="https://hongvansu.github.io/flower2/flower1.html">
+        <img src="image/25895_GWY_R (1).png"
+         alt="FLOWER BASKETS KEEP LOVING">
+         </a>
+     </li>
+      <div class="product-name">KEEP BEST LOVING</div>
+      <div class="product-price">$14,67</div>
     </div>
-
-    <div class="swiper featured-slider">
-
-        <div class="swiper-wrapper">
- 
-             <div class="swiper-slide box">
-                 <img src="image/Car Card (4).png" alt="">
-                 <div class="content">
-                     
-                     <div class="stars">
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star-half-alt"></i>
-                     </div>
-                     
-                 </div>
-             </div>
- 
-             <div class="swiper-slide box">
-                 <img src="image/Car Card (5).png" alt="">
-                 <div class="content">
-                     
-                     <div class="stars">
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star-half-alt"></i>
-                     </div>
-                     
-                 </div>
-             </div>
- 
-             <div class="swiper-slide box">
-                 <img src="image/Car Card (6).png" alt="">
-                 <div class="content">
-                    
-                     <div class="stars">
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star-half-alt"></i>
-                     </div>
-                     
-                 </div>
-             </div>
- 
-             <div class="swiper-slide box">
-                 <img src="image/Car Card (7).png" alt="">
-                 <div class="content">
-                     
-                     <div class="stars">
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star-half-alt"></i>
-                     </div>
-                    
-                 </div>
-             </div>
- 
-        </div>
- 
-        <div class="swiper-pagination"></div>
- 
-     </div>
-
-</section>
-
- 
-
-<section class="vehicles" id="vehicles">
-
-    <h1 class="heading"> Our Top Buying Tips </h1>
-    <p>Make sure you make the right choice picking a car</p>
-
-    <div class="swiper vehicles-slider">
-
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide box">
-                <img src="image/Rectangle 4.png" alt="">
-                <div class="content">
-                    
-                    <a href="#" class="btn">check out</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="image/Rectangle 4 (1).png" alt="">
-                <div class="content">
-                    
-                    <a href="#" class="btn">check out</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="image/Rectangle 4 (2).png" alt="">
-                <div class="content">
-                    
-                    <a href="#" class="btn">check out</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="image/Rectangle 4.png" alt="">
-                <div class="content">
-                   
-                    <a href="#" class="btn">check out</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="image/Rectangle 4 (1).png" alt="">
-                <div class="content">
-                   
-                    <a href="#" class="btn">check out</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="image/Rectangle 4 (1).png" alt="">
-                <div class="content">
-                    
-                    <a href="#" class="btn">check out</a>
-                </div>
-            </div>
-
-        
-
-        <div class="swiper-pagination"></div>
-
-   
-
-</section>
-
-
-
-   
-
-    
-
-    
-
-     
-
-
-
-
-           
-              
-          
- 
-           
-
-<section class="newsletter">
-    
-    <h3>Never Miss A Message</h3>
-    <p>Join our exclusive list for one off deals and more.</p>
-
-   <form action="">
-        <input type="email" placeholder="enter your email">
-        <input type="submit" value="subscribe">
-   </form>
-
-</section>
-
-
-
-
-
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-<script src="js/script.js"></script>
-
-</body>
+  </ul>
+  </li>
+    <div class="item">
+      <ul class="list-flower">
+        <li>
+      <a href="https://hongvansu.github.io/flower3/flower1.html">
+        <img src="image/25895_GWY_R (2).png"
+         alt="VASE OF FLOWERS - RED SASA ROSES (25)">
+         </a>
+      </li>
+      <div class="product-name">RED SASA ROSES (25)</div>
+      <div class="product-price">$15,56</div>
+    </div>
+  </ul>
+  </li>
+    <div class="item">
+      <ul class="list-flower">
+        <li>
+      <a href="https://hongvansu.github.io/flower4/flower1.html">
+        <img src="image/25895_GWY_R (3).png"
+         alt="RED SASA ROSES (30)">
+         </a>
+        </li>
+      <div class="product-name">RED SASA ROSES (30)</div>
+      <div class="product-price">$15,56</div>
+    </div>
+  </ul>
+  </li>
+    <div class="item">
+      <ul class="list-flower">
+        <li>
+      <a href="https://hongvansu.github.io/flower5/flower1.html">
+        <img src="image/25895_GWY_R (4).png"
+         alt="MERRY CHRISTMAS ROSES">
+         </a>
+     </li>
+      <div class="product-name">MERRY CHRISTMAS ROSES</div>
+      <div class="product-price">$22.99</div>
+    </div>
+  </ul>
+  </li>
+    <div class="item">
+      <ul class="list-flower">
+        <li>
+      <a href="https://hongvansu.github.io/flower6/flower1.html">
+        <img src="image/25895_GWY_R (5).png"
+         alt="YOU BEAUTIFUL ROSES">
+         </a>
+        </li>
+      <div class="product-name">YOU BEAUTIFUL ROSES
+      </div>
+      <div class="product-price">$33.33</div>
+    </div>
+  </ul>
+  </li>
+  </body>
 </html>
