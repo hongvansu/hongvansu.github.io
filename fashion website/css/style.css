@@ -84,7 +84,7 @@ section {
 }
 
 .btn:hover {
-  background: #030B51;
+  background: #B22222;
 }
 
 .header {
@@ -107,7 +107,7 @@ section {
   padding: 2rem 9%;
   background: #fff;
 }
-
+/*
 .header .logo {
   font-size: 2.5rem;
   color: #030B51;
@@ -117,7 +117,7 @@ section {
 .header .logo i {
   color: #eb4d4b;
 }
-
+*/
 .header .navbar a {
   font-size: 1.7rem;
   color: #666;
@@ -508,7 +508,7 @@ section {
 
   font: 400 100px/1.3 'Oleo Script', Helvetica, sans-serif;
   text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
-  color: #030B51;
+  color: #982008;
   font-size: 5rem;
   padding: .5rem 0;
 }
@@ -948,7 +948,7 @@ section {
 }
 
 .footer .share a:hover {
-  background: #901212;
+  background: #13B9E5;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
