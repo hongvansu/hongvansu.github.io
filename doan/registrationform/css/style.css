@@ -11,6 +11,7 @@
   text-transform: capitalize;
   -webkit-transition: .2s linear;
   transition: .2s linear;
+  
 
 }
 
@@ -1183,7 +1184,7 @@ button .fa{
  
  .form-group0{
        
-  font-size: 20px;
+  font-size: 10px;
     padding: 15px 10px;
 }
 
