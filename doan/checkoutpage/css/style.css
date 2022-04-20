@@ -1414,19 +1414,22 @@ input::-webkit-outer-spin-button {
 
 .btn:focus {
   color: var(--white);
-  background: var(--azure);
+  background: var(--dim-gray);
   outline: 2px solid var(--azure);
   outline-offset: 2px;
 }
 
 .btn-primary {
-  background: var(--azure);
+  background: var(--dim-gray);
   font-weight: var(--fw-5);
   color: var(--white);
   padding: 13px 45px;
-}
+  font-size: 20px;
+  }
 
-.btn-primary b { margin-right: 10px; }
+
+.btn-primary b { margin-right: 10px;
+font-size: 20px; }
 
 
 /**
