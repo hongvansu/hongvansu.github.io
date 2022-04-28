@@ -1478,12 +1478,14 @@ font-size: 20px; }
 }
 
 .product-qty button {
-  background: var(--platinum);
+  background:var(--dim-gray);
+ 
   width:  20px;
   height: 20px;
   display:         flex;
   justify-content: center;
   align-items:     center;
+  
 }
 
 .product-qty button:active,
