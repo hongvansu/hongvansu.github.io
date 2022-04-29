@@ -15,6 +15,7 @@ html, body{
     font-family: monospace;
     font-size: 3rem;
     padding: 1rem 0;
+    color: gray;
 }
 
 .wrapper .container .grid-col{
