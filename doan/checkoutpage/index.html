@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>project of fontend web</title>
 
-    <link rel="icon" href="favicon.ico"/>
+    <link rel="icon" href="favicon.ico" />
 
     <link
       rel="stylesheet"
@@ -19,8 +19,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
 
-  
-
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -31,21 +29,33 @@
       <img src="image/logo.png" />
 
       <nav class="navbar">
-        <a href="https://hongvansu.github.io/doan/fashionproject/index.html">home</a>
-        <a href="https://hongvansu.github.io/doan/products/index.html">products</a>
-        <a href="https://hongvansu.github.io/doan/featuredproducts/index.html">featured</a>
-        <a href="https://hongvansu.github.io/doan/Previewer/Index.html">review</a>
-        <a href="https://hongvansu.github.io/doan/contact/index.html">contact</a>
+        <a href="https://hongvansu.github.io/doan/fashionproject/index.html"
+          >home</a
+        >
+        <a href="https://hongvansu.github.io/doan/products/index.html"
+          >products</a
+        >
+        <a href="https://hongvansu.github.io/doan/featuredproducts/index.html"
+          >featured</a
+        >
+        <a href="https://hongvansu.github.io/doan/contact/index.html"
+          >contact</a
+        >
         <a href="https://hongvansu.github.io/doan/blog/index.html">blogs</a>
       </nav>
-
 
       <div class="icons">
         <div id="menu-btn" class="fas fa-bars"></div>
         <div id="search-btn" class="fas fa-search"></div>
-        <a href="https://hongvansu.github.io/doan/checkoutpage/index.html" class="fas fa-shopping-cart"></a>
+        <a
+          href="https://hongvansu.github.io/doan/checkoutpage/index.html"
+          class="fas fa-shopping-cart"
+        ></a>
 
-        <a href="https://hongvansu.github.io/doan/registrationform/index.html" class="fas fa-user"></a>
+        <a
+          href="https://hongvansu.github.io/doan/registrationform/index.html"
+          class="fas fa-user"
+        ></a>
       </div>
 
       <form action="" class="search-form">
@@ -64,271 +74,269 @@
     <!-- home section starts  -->
 
     <main class="container">
-
-    
-  
       <div class="item-flex">
-  
         <!--
          - checkout section
         -->
         <section class="checkout">
-  
           <h2 class="section-heading">Payment Details</h2>
-  
+
           <div class="payment-form">
-  
             <div class="payment-method">
-  
               <button class="method selected">
                 <ion-icon name="card"></ion-icon>
-  
+
                 <span>Credit Card</span>
-  
-                <ion-icon class="checkmark fill" name="checkmark-circle"></ion-icon>
+
+                <ion-icon
+                  class="checkmark fill"
+                  name="checkmark-circle"
+                ></ion-icon>
               </button>
-  
+
               <button class="method">
                 <ion-icon name="logo-paypal"></ion-icon>
-  
+
                 <span>PayPal</span>
-  
-                <ion-icon class="checkmark" name="checkmark-circle-outline"></ion-icon>
+
+                <ion-icon
+                  class="checkmark"
+                  name="checkmark-circle-outline"
+                ></ion-icon>
               </button>
-  
             </div>
-  
+
             <form action="#">
-  
               <div class="cardholder-name">
-                <label for="cardholder-name" class="label-default">select a delivery address below</label>
-                <input type="text" name="cardholder-name" id="cardholder-name" class="input-default">
+                <label for="cardholder-name" class="label-default"
+                  >select a delivery address below</label
+                >
+                <input
+                  type="text"
+                  name="cardholder-name"
+                  id="cardholder-name"
+                  class="input-default"
+                />
               </div>
-  
+
               <div class="card-number">
                 <label for="card-number" class="label-default">City </label>
-                <input type="number" name="card-number" id="card-number" class="input-default">
+                <input
+                  type="number"
+                  name="card-number"
+                  id="card-number"
+                  class="input-default"
+                />
               </div>
-  
+
               <div class="input-flex">
-  
                 <div class="expire-date">
-                  <label for="expire-date" class="label-default">Phone Number </label>
-  
+                  <label for="expire-date" class="label-default"
+                    >Phone Number
+                  </label>
+
                   <div class="input-flex">
-  
-                    <input type="number" name="day" id="expire-date" placeholder="#" min="1" max="31"
-                      class="input-default">
+                    <input
+                      type="number"
+                      name="day"
+                      id="expire-date"
+                      placeholder="#"
+                      min="1"
+                      max="31"
+                      class="input-default"
+                    />
                     /
-                    <input type="number" name="month" id="expire-date" placeholder="#" min="1" max="12"
-                      class="input-default">
-  
+                    <input
+                      type="number"
+                      name="month"
+                      id="expire-date"
+                      placeholder="#"
+                      min="1"
+                      max="12"
+                      class="input-default"
+                    />
                   </div>
                 </div>
-  
+
                 <div class="cvv">
                   <label for="cvv" class="label-default">Zip Code</label>
-                  <input type="number" name="cvv" id="cvv" class="input-default">
+                  <input
+                    type="number"
+                    name="cvv"
+                    id="cvv"
+                    class="input-default"
+                  />
                 </div>
-  
               </div>
-  
             </form>
-  
           </div>
           <a href="https://hongvansu.github.io/doan/paymentform/index.html">
-          <button class="btn btn-primary">
-            <b>Pay</b> $ <span id="payAmount">00.00</span>
-          </button> </a>
-  
+            <button class="btn btn-primary">
+              <b>Pay</b> $ <span id="payAmount">00.00</span>
+            </button>
+          </a>
         </section>
-  
-  
+
         <!--
           - cart section
         -->
         <section class="cart">
-  
           <div class="cart-item-box">
-  
             <h2 class="section-heading">Order Summery</h2>
-  
+
             <div class="product-card">
-  
               <div class="card">
-  
                 <div class="img-box">
-                  <img src="./image/pt6.webp" alt="whiter dress" width="80px" class="product-img">
+                  <img
+                    src="./image/pt6.webp"
+                    alt="whiter dress"
+                    width="80px"
+                    class="product-img"
+                  />
                 </div>
-  
+
                 <div class="detail">
-  
-                  <h4 class="product-name">White satin dress </h4>
-  
+                  <h4 class="product-name">White satin dress</h4>
+
                   <div class="wrapper">
-  
                     <div class="product-qty">
                       <button id="decrement">
                         <ion-icon name="remove-outline"></ion-icon>
                       </button>
-  
+
                       <span id="quantity">1</span>
-  
+
                       <button id="increment">
                         <ion-icon name="add-outline"></ion-icon>
                       </button>
                     </div>
-  
-                    <div class="price">
-                      $ <span id="price">120</span>
-                    </div>
-  
+
+                    <div class="price">$ <span id="price">120</span></div>
                   </div>
-  
                 </div>
-  
+
                 <button class="product-close-btn">
                   <ion-icon name="close-outline"></ion-icon>
                 </button>
-  
               </div>
-  
             </div>
-  
+
             <div class="product-card">
-  
               <div class="card">
-  
                 <div class="img-box">
-                  <img src="./image/sx10.jpeg" alt="red dress" width="80px" class="product-img">
+                  <img
+                    src="./image/sx10.jpeg"
+                    alt="red dress"
+                    width="80px"
+                    class="product-img"
+                  />
                 </div>
-  
+
                 <div class="detail">
-  
                   <h4 class="product-name">Red satin dress</h4>
-  
+
                   <div class="wrapper">
-  
                     <div class="product-qty">
                       <button id="decrement">
                         <ion-icon name="remove-outline"></ion-icon>
                       </button>
-  
+
                       <span id="quantity">1</span>
-  
+
                       <button id="increment">
                         <ion-icon name="add-outline"></ion-icon>
                       </button>
                     </div>
-  
-                    <div class="price">
-                      $ <span id="price">125</span>
-                    </div>
-  
+
+                    <div class="price">$ <span id="price">125</span></div>
                   </div>
-  
                 </div>
-  
+
                 <button class="product-close-btn">
                   <ion-icon name="close-outline"></ion-icon>
                 </button>
-  
               </div>
-  
             </div>
-  
-  
+
             <div class="product-card">
-  
               <div class="card">
-  
                 <div class="img-box">
-                  <img src="./image/sx15.jpeg" alt="white dress" width="80px" class="product-img">
+                  <img
+                    src="./image/sx15.jpeg"
+                    alt="white dress"
+                    width="80px"
+                    class="product-img"
+                  />
                 </div>
-  
+
                 <div class="detail">
-  
-                  <h4 class="product-name">Red satin dress </h4>
-  
+                  <h4 class="product-name">Red satin dress</h4>
+
                   <div class="wrapper">
-  
                     <div class="product-qty">
                       <button id="decrement">
                         <ion-icon name="remove-outline"></ion-icon>
                       </button>
-  
+
                       <span id="quantity">1</span>
-  
+
                       <button id="increment">
                         <ion-icon name="add-outline"></ion-icon>
                       </button>
                     </div>
-  
-                    <div class="price">
-                      $ <span id="price">120</span>
-                    </div>
-  
+
+                    <div class="price">$ <span id="price">120</span></div>
                   </div>
-  
                 </div>
-  
+
                 <button class="product-close-btn">
                   <ion-icon name="close-outline"></ion-icon>
                 </button>
-  
               </div>
-  
             </div>
-  
           </div>
-  
+
           <div class="wrapper">
-  
             <div class="discount-token">
-  
-              <label for="discount-token" class="label-default">Gift card/Discount code</label>
-  
+              <label for="discount-token" class="label-default"
+                >Gift card/Discount code</label
+              >
+
               <div class="wrapper-flex">
-  
-                <input type="text" name="discount-token" id="discount-token" class="input-default">
-  
+                <input
+                  type="text"
+                  name="discount-token"
+                  id="discount-token"
+                  class="input-default"
+                />
+
                 <button class="btn btn-outline">Apply</button>
-  
               </div>
-  
             </div>
-  
+
             <div class="amount">
-  
               <div class="subtotal">
-                <span>Subtotal</span> <span>$ <span id="subtotal">0.00</span></span>
+                <span>Subtotal</span>
+                <span>$ <span id="subtotal">0.00</span></span>
               </div>
-  
+
               <div class="tax">
                 <span>Tax</span> <span>$ <span id="tax">0.10</span></span>
               </div>
-  
+
               <div class="shipping">
-                <span>Shipping</span> <span>$ <span id="shipping">0.00</span></span>
+                <span>Shipping</span>
+                <span>$ <span id="shipping">0.00</span></span>
               </div>
-  
+
               <div class="total">
                 <span>Total</span> <span>$ <span id="total">00.00</span></span>
               </div>
-  
             </div>
-  
           </div>
-  
         </section>
-  
       </div>
-  
     </main>
-  
-  
-  
-
 
     <!-- home section ends -->
 
@@ -338,13 +346,9 @@
 
     <!-- products section starts  -->
 
-   
-
     <!-- products section ends -->
 
     <!-- deal section starts  -->
-
-    
 
     <!-- deal section ends -->
 
@@ -356,16 +360,17 @@
       <div class="swiper featured-slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide slide">
-            <a href="https://hongvansu.github.io/doan/fashionproject/index.html">
-            <div class="image">
-              <img src="image/sxw5.jpeg" alt="" />
-            </div>
+            <a
+              href="https://hongvansu.github.io/doan/fashionproject/index.html"
+            >
+              <div class="image">
+                <img src="image/sxw5.jpeg" alt="" />
+              </div>
             </a>
             <div class="content">
               <h3>SATIN MINI DRESS</h3>
               <div class="price">
                 <div class="amount">$250.00</div>
-                
               </div>
               <div class="stars">
                 <i class="fas fa-star"></i>
@@ -379,16 +384,17 @@
           </div>
 
           <div class="swiper-slide slide">
-            <a href="https://hongvansu.github.io/doan/fashionproject/index.html">
-            <div class="image">
-              <img src="image/sxw4.jpeg" alt="" />
-            </div>
+            <a
+              href="https://hongvansu.github.io/doan/fashionproject/index.html"
+            >
+              <div class="image">
+                <img src="image/sxw4.jpeg" alt="" />
+              </div>
             </a>
             <div class="content">
               <h3>SATIN MINI DRESS</h3>
               <div class="price">
                 <div class="amount">$250.00</div>
-               
               </div>
               <div class="stars">
                 <i class="fas fa-star"></i>
@@ -402,16 +408,17 @@
           </div>
 
           <div class="swiper-slide slide">
-            <a href="https://hongvansu.github.io/doan/fashionproject/index.html">
-            <div class="image">
-              <img src="image/sx21.jpeg" alt="" />
-            </div>
+            <a
+              href="https://hongvansu.github.io/doan/fashionproject/index.html"
+            >
+              <div class="image">
+                <img src="image/sx21.jpeg" alt="" />
+              </div>
             </a>
             <div class="content">
               <h3>SATIN MINI DRESS</h3>
               <div class="price">
                 <div class="amount">$250.00</div>
-              
               </div>
               <div class="stars">
                 <i class="fas fa-star"></i>
@@ -425,16 +432,17 @@
           </div>
 
           <div class="swiper-slide slide">
-            <a href="https://hongvansu.github.io/doan/fashionproject/index.html">
-            <div class="image">
-              <img src="image/sx20.jpeg" alt="" />
-            </div>
+            <a
+              href="https://hongvansu.github.io/doan/fashionproject/index.html"
+            >
+              <div class="image">
+                <img src="image/sx20.jpeg" alt="" />
+              </div>
             </a>
             <div class="content">
               <h3>SATIN MINI DRESS</h3>
               <div class="price">
                 <div class="amount">$250.00</div>
-                
               </div>
               <div class="stars">
                 <i class="fas fa-star"></i>
@@ -448,16 +456,17 @@
           </div>
 
           <div class="swiper-slide slide">
-            <a href="https://hongvansu.github.io/doan/fashionproject/index.html">
-            <div class="image">
-              <img src="image/sxw1.webp" alt="" />
-            </div>
+            <a
+              href="https://hongvansu.github.io/doan/fashionproject/index.html"
+            >
+              <div class="image">
+                <img src="image/sxw1.webp" alt="" />
+              </div>
             </a>
             <div class="content">
               <h3>SATIN MINI DRESS</h3>
               <div class="price">
                 <div class="amount">$250.00</div>
-                
               </div>
               <div class="stars">
                 <i class="fas fa-star"></i>
@@ -471,16 +480,17 @@
           </div>
 
           <div class="swiper-slide slide">
-            <a href="https://hongvansu.github.io/doan/fashionproject/index.html">
-            <div class="image">
-              <img src="image/sx18.jpeg" alt="" />
-            </div>
+            <a
+              href="https://hongvansu.github.io/doan/fashionproject/index.html"
+            >
+              <div class="image">
+                <img src="image/sx18.jpeg" alt="" />
+              </div>
             </a>
             <div class="content">
               <h3>SATIN MINI DRESS</h3>
               <div class="price">
                 <div class="amount">$250.00</div>
-                
               </div>
               <div class="stars">
                 <i class="fas fa-star"></i>
@@ -520,7 +530,8 @@
         <div class="box">
           <h3>about us</h3>
           <p>
-            Say goodbye to all limits, and curate the perfect wardrobe of high-quality, fashionable clothing representing your unique style.
+            Say goodbye to all limits, and curate the perfect wardrobe of
+            high-quality, fashionable clothing representing your unique style.
           </p>
         </div>
 
@@ -533,16 +544,14 @@
           <a href="#"> <i class="fas fa-arrow-right"></i> new arrivals </a>
         </div>
 
-        
-
-      <div class="box">
-        <h3>news letter</h3>
-        <p>subscribe for latest updates</p>
-        <input type="email" placeholder="your email" class="email">
-        <input type="submit" value="subscribe" class="btn1">
-        <img src="image/payment.png" class="payment-img" alt="">
-    </div>
-  </div>
+        <div class="box">
+          <h3>news letter</h3>
+          <p>subscribe for latest updates</p>
+          <input type="email" placeholder="your email" class="email" />
+          <input type="submit" value="subscribe" class="btn1" />
+          <img src="image/payment.png" class="payment-img" alt="" />
+        </div>
+      </div>
 
       <div class="share">
         <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
