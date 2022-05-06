@@ -51,13 +51,10 @@ section {
 
 .heading {
   font-size: 3.5rem;
-  color: #666;
+  color: #1D1A21;
   padding-bottom: 2rem;
   text-align: center;
-}
-
-.heading span {
-  color: #666;
+  font-weight: bold;
 }
 
 .btn {
@@ -106,6 +103,7 @@ section {
           justify-content: space-between;
   padding: 2rem 9%;
   background: #fff;
+
 }
 /*
 .header .logo {
@@ -119,9 +117,10 @@ section {
 }
 */
 .header .navbar a {
-  font-size: 1.7rem;
-  color: #666;
-  margin: 0 1rem;
+  font-size: 2.0rem;
+  font-weight: bold;
+  color: #1D1A21;
+  margin: 0 3rem;
 }
 
 .header .navbar a:hover {
@@ -324,9 +323,10 @@ section {
 
 .products .filter-buttons .buttons {
   font-size: 1.7rem;
-  color: #666;
+  color: #210419;
   cursor: pointer;
   margin: auto;
+  font-weight: bold;
 }
 
 .products .filter-buttons .buttons:hover, .products .filter-buttons .buttons.active {
@@ -425,8 +425,8 @@ section {
 
 .products .box-container .box .content h3 {
   font-size: 2rem;
-  color: #666;
-  font-weight: normal;
+  color: #1D1A21;
+  font-weight: bold;
 }
 
 .products .box-container .box .content .price {
@@ -443,7 +443,7 @@ section {
 .products .box-container .box .content .price .amount {
   font-size: 2.2rem;
   font-weight: bolder;
-  color: #000;
+  color: #4B0521;
 }
 
 .products .box-container .box .content .price .cut {
@@ -590,8 +590,8 @@ section {
 
 .featured .featured-slider .slide .content h3 {
   font-size: 2rem;
-  color: #666;
-  font-weight: normal;
+  color: #1D1A21;
+  font-weight: bold;
 }
 
 .featured .featured-slider .slide .content .price {
@@ -608,7 +608,7 @@ section {
 .featured .featured-slider .slide .content .price .amount {
   font-size: 2.2rem;
   font-weight: bolder;
-  color: #000;
+  color: #5A0419;
 }
 
 .featured .featured-slider .slide .content .price .cut {
