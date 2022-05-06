@@ -326,6 +326,7 @@ section {
   font-size: 1.7rem;
   color: #666;
   cursor: pointer;
+  margin: auto;
 }
 
 .products .filter-buttons .buttons:hover, .products .filter-buttons .buttons.active {
