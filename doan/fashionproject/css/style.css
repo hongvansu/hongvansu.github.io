@@ -612,15 +612,14 @@ section {
 }
 
 .featured .featured-slider .slide .content .price .cut {
-  font-size: 1.5rem;
-  text-decoration: line-through;
+  font-size: 1.5rem;  
   color: #666;
 }
 
 .featured .featured-slider .slide .content .price .offer {
   font-size: 1.5rem;
   color: #901212;
-  text-decoration: line-through;
+  
 }
 
 .featured .featured-slider .slide .content .stars {
