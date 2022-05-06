@@ -873,6 +873,7 @@ section {
   color: #eb4d4b;
 }
 */
+
 .footer {
   background: #f9f9f9;
 }
@@ -972,6 +973,7 @@ section {
 .footer .credit span {
   color: #666;
 }
+
 
 @media (max-width: 991px) {
   html {
@@ -1479,7 +1481,6 @@ font-size: 20px; }
 
 .product-qty button {
   background:var(--dim-gray);
- 
   width:  20px;
   height: 20px;
   display:         flex;
@@ -1490,10 +1491,10 @@ font-size: 20px; }
 
 .product-qty button:active,
 .product-close-btn:active ion-icon { transform: scale(0.95); }
-
 .product-qty button ion-icon {
   --ionicon-stroke-width: 60px;
   font-size: 10px;
+  color: #06c;
 }
 
 .product-close-btn {
@@ -1504,7 +1505,7 @@ font-size: 20px; }
 
 .product-close-btn ion-icon {
   font-size: 25px;
-  color: var(--quick-silver);
+  color:var(--quick-silver);
 }
 
 .product-close-btn:hover ion-icon { color: var(--red-salsa); }
@@ -1535,7 +1536,7 @@ font-size: 20px; }
 }
 
 .btn-outline:hover {
-  background: var(--dim-gray);
+  background:var(--dim-gray);
   color: var(--white);
 }
 
