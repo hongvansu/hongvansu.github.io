@@ -50,7 +50,7 @@ section {
 }
 
 .heading {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   color: #1D1A21;
   padding-bottom: 2rem;
   text-align: center;
@@ -117,9 +117,9 @@ section {
 }
 */
 .header .navbar a {
-  font-size: 2.0rem;
-  color: #1D1A21;
-  margin: 0 3rem;
+  font-size: 1.7rem;
+  color: #666;
+  margin: 0 1rem;
 }
 
 .header .navbar a:hover {
@@ -423,8 +423,7 @@ section {
 }
 
 .products .box-container .box .content h3 {
-  font-size: 2rem;
-  color: #1D1A21;
+  color: rgb(29, 26, 33);
   font-weight: bold;
 }
 
@@ -442,7 +441,7 @@ section {
 .products .box-container .box .content .price .amount {
   font-size: 2.2rem;
   font-weight: bolder;
-  color: #4B0521;
+  color: #901212;
 }
 
 .products .box-container .box .content .price .cut {
@@ -588,8 +587,7 @@ section {
 }
 
 .featured .featured-slider .slide .content h3 {
-  font-size: 2rem;
-  color: #1D1A21;
+  color: rgb(29, 26, 33);
   font-weight: bold;
 }
 
